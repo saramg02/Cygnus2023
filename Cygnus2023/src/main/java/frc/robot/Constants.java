@@ -16,9 +16,9 @@ public final class Constants {
   //---------------------controles-----------------------//
 
   //---------------------chasis--------------------------//
-  public static final int kDriveMotor1 = 0;
-  public static final int kDriveMotor2 = 1;
-  public static final int kDriveMotor3 = 2;
-  public static final int kDriveMotor4 = 3;
+  public static final int kDriveMotor1 = 1;
+  public static final int kDriveMotor2 = 2;
+  public static final int kDriveMotor3 = 3;
+  public static final int kDriveMotor4 = 4;
   //---------------------chasis--------------------------//
 }
