@@ -14,7 +14,8 @@ public final class Constants {
   public static final double kStickTolerance = 0.15;
 
   //---------------------controles-----------------------//
-
+  public static final XboxController control1 = new XboxController(0);
+  public static final XboxController control2 = new XboxController(1);
   //---------------------chasis--------------------------//
   public static final int kDriveMotor1 = 1;
   public static final int kDriveMotor2 = 2;
