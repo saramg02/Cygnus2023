@@ -17,9 +17,9 @@ public final class Constants {
   public static final XboxController control1 = new XboxController(0);
   public static final XboxController control2 = new XboxController(1);
   //---------------------chasis--------------------------//
-  public static final int kDriveMotor1 = 1;
-  public static final int kDriveMotor2 = 2;
-  public static final int kDriveMotor3 = 3;
-  public static final int kDriveMotor4 = 4;
+  public static final int MotorFR = 1;
+  public static final int MotorBR = 2;
+  public static final int MotorFL= 3;
+  public static final int MotorBL= 4;
   //---------------------chasis--------------------------//
 }
