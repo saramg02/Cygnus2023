@@ -6,7 +6,7 @@ import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants;
 
-public class driveMecanum extends SubsystemBase {
+public class Drive extends SubsystemBase {
 
     //-----------------------características---------------------//
     //Hardware
@@ -30,18 +30,18 @@ public class driveMecanum extends SubsystemBase {
     //-----------------------características---------------------//
 
     // constructor que se ejecuta una vez
-    public driveMecanum(){
-        Rmotor1 = new TalonSRX(Constants.kDriveMotor1);
-        Rmotor2 = new TalonSRX(Constants.kDriveMotor2);
-        Lmotor3 = new TalonSRX(Constants.kDriveMotor3);
-        Lmotor4 = new TalonSRX(Constants.kDriveMotor4);
+    public Drive(){
+        Rmotor1 = new TalonSRX(Constants.MotorFR);
+        Rmotor2 = new TalonSRX(Constants.MotorBR);
+        Lmotor3 = new TalonSRX(Constants.MotorFL);
+        Lmotor4 = new TalonSRX(Constants.MotorBL);
         //cosas que iniciamos
         velocidad=0;
         realLeftSpeed=0;
         realRightSpeed=0;
     }
 
-    //------------------------funciones del subsystema---------------//
+    //------------------------funciones del subsystem---------------//
     public void avanzar(double yInput,double xInput){
         if(yInput<0){
             rightSpeed = yInput+xInput;
